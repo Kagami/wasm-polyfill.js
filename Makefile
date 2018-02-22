@@ -9,6 +9,9 @@ wasm-polyfill.js: src/*.js src/translate/*.js node_modules/long/package.json rol
 	node_modules/.bin/rollup -c
 	sed -i 's/\([a-z]\+\)\.WebAssembly *= *\([a-z]\+\)()/\1.WebAssembly=\1.WebAssembly||\2()/' wasm-polyfill.js
 
+watch:
+	node_modules/.bin/rollup -c -w
+
 webextension/wasm-polyfill.js: wasm-polyfill.js
 	cp wasm-polyfill.js webextension/wasm-polyfill.js
 
