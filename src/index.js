@@ -23,8 +23,6 @@ import { compileAsync, compileSync} from "./compile"
 import { CompileError, LinkError, RuntimeError } from "./errors"
 import { dump, _toBoxedNaN } from "./utils"
 
-export default WebAssembly
-
 var WebAssembly = {
   Module: Module,
   Instance: Instance,
@@ -43,6 +41,8 @@ var WebAssembly = {
   _toBoxedNaN: _toBoxedNaN,
   _dump: dump
 }
+
+export default WebAssembly
 
 
 function validate(bytes) {

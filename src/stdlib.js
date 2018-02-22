@@ -27,9 +27,9 @@ import {
   isNaNPreserving64
 } from "./utils"
 
-export default stdlib
-
 var stdlib = {}
+
+export default stdlib
 
 // A little scratch space for examining the bits
 // of a float, converting float<->int, etc.
