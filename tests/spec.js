@@ -104,7 +104,7 @@ function mkSpecTestRunner(filename) {
             }
           }
         }
-        fs.unlink(testFile)
+        fs.unlinkSync(testFile)
         done()
       })
     })
