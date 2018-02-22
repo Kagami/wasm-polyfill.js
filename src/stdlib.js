@@ -219,7 +219,6 @@ stdlib.f32_neg = function (v) {
       scratchBytes[3] |= 0x80
     }
     return f32_scratchLoad()
-    return res
   }
   return -v
 }
