@@ -445,7 +445,7 @@ export default function translateFunctionCode(s, r, f) {
         f.cfStack.spillAllValues()
         f.cfStack.finalizeTrapConditions()
         if (flags === 3) { flags = 2 }
-        f.cfStack.addStatement(new I32Store(new I32FromI64Low(value), addr, offset, flags))
+        f.cfStack.peek().statements.push(new I32Store(new I32FromI64Low(value), addr, offset, flags))
         f.cfStack.addStatement(new I32Store(new I32FromI64High(value), addr, offset + 4, flags))
         break
 
