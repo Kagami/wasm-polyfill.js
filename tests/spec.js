@@ -5,7 +5,7 @@ const cp = require('child_process')
 
 var SPECDIR = path.resolve(__dirname, '..', 'spec')
 var SPECTESTDIR = path.resolve(__dirname, '..', 'spec', 'test', 'core')
-var CODEFILE = path.resolve(__dirname, '..', 'wasm-polyfill.min.js')
+var CODEFILE = path.resolve(__dirname, '..', 'wasm-polyfill.js')
 
 describe('The WebAssembly polyfill', function() {
   var TEST_FILES = fs.readdirSync(SPECTESTDIR)

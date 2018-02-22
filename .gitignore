@@ -1,4 +1,3 @@
-test.tmp.*
-node_modules/
-wasm-polyfill.min.js
-webextension/wasm-polyfill.min.js
+/node_modules/
+/wasm-polyfill.js
+/webextension/wasm-polyfill.js
