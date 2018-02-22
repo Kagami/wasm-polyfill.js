@@ -9,7 +9,7 @@
 
 
 fs = require('fs')
-var WebAssembly = require('../wasm-polyfill.min.js')
+var WebAssembly = require('../wasm-polyfill.js')
 
 var buf = fs.readFileSync(process.argv[2])
 var data = new Uint8Array(buf)
