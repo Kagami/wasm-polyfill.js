@@ -47,7 +47,7 @@ export var SECTIONS = {
 
 export var TOKENS = {
   MAGIC_NUMBER: 0x6d736100,
-  VERSION_NUMBER: 0xd
+  VERSION_NUMBER: 0x1
 }
 
 export var OPCODES = {

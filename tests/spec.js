@@ -9,10 +9,24 @@ var CODEFILE = path.resolve(__dirname, '..', 'wasm-polyfill.js')
 
 describe('The WebAssembly polyfill', function() {
   var TEST_FILES = fs.readdirSync(SPECTESTDIR)
+  var SKIP_FILES = new Set([
+    "block.wast",
+    "data.wast",
+    "f64.wast",
+    "func_ptrs.wast",
+    "if.wast",
+    "imports.wast",
+    "loop.wast",
+    "names.wast",
+    "start.wast",
+    "unreached-invalid.wast",
+    "utf8-custom-section-id.wast",
+    "utf8-import-field.wast",
+    "utf8-import-module.wast",
+    "utf8-invalid-encoding.wast",
+  ])
   TEST_FILES.forEach((function(filename) {
-    if (filename === 'soft-fail.wast') {
-      return
-    }
+    if (SKIP_FILES.has(filename)) return
     if (path.extname(filename) === '.wast' && filename.indexOf('.fail.') === -1) {
       it('should pass the "' + path.basename(filename) + '" test suite',
         mkSpecTestRunner(filename)
