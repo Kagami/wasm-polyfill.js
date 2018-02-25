@@ -73,7 +73,7 @@ Next, make sure you've built it into a standalone JS file::
 Then you can load it into a webpage like this:
 
 ```
-<script type="text/javascript" src="./wasm-polyfill.min.js"></script>
+<script type="text/javascript" src="./wasm-polyfill.js"></script>
 <script type="text/javascript">
 // This uses the browser's builtin WebAssembly if present,
 // and the polyfill if not.
@@ -84,7 +84,7 @@ var funcs = WebAssembly.instantiate("wasm code here")
 Or load it as a module in node:
 
 ```
-var WebAssembly = require('wasm-polyfill.min.js')
+var WebAssembly = require('wasm-polyfill.js')
 var funcs = WebAssembly.instantiate("wasm code here")
 ```
 
