@@ -5,6 +5,25 @@
   "bin": {
     "translate": "./bin/translate.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kagami/wasm-polyfill.js.git"
+  },
+  "keywords": [
+    "webassembly",
+    "wasm",
+    "asm.js",
+    "polyfill"
+  ],
+  "author": "Ryan Kelly",
+  "contributors": [
+    "Kagami Hiiragi"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kagami/wasm-polyfill.js/issues"
+  },
+  "homepage": "https://github.com/Kagami/wasm-polyfill.js#readme",
   "dependencies": {
     "long": "^3.2.0"
   },
