@@ -28,7 +28,7 @@
     "long": "^3.2.0"
   },
   "devDependencies": {
-    "mocha": "^3.2.0",
+    "mocha": "^5.2.0",
     "rollup": "^0.39.2",
     "rollup-plugin-commonjs": "^7.0.0",
     "rollup-plugin-node-resolve": "^2.0.0",
